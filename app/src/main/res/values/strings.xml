@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NHL</string>
+    <string name="nav_header_title">NHL</string>
+    <string name="nav_header_subtitle">National Hockey League</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+
+    <string name="action_sort_name">Sort by Name</string>
+    <string name="action_sort_jerseyNo">Sort by Jersey No</string>
+
+    <string name="menu_home">Team Players</string>
+</resources>
