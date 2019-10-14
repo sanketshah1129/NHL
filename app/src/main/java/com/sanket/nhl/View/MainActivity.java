@@ -50,7 +50,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        viewModel = ViewModelProviders.of(this).get(MainViewModel.class);;
+        viewModel = ViewModelProviders.of(this).get(MainViewModel.class);
+        ;
         fragment = new HomeFragment();
 
         drawer = findViewById(R.id.drawer_layout);

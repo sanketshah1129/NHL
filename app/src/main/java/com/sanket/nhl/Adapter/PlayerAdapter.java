@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.sanket.nhl.Model.Person;
 import com.sanket.nhl.Model.RosterItem;
 import com.sanket.nhl.R;
 import com.sanket.nhl.Utils.Common;
@@ -54,7 +53,7 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.ViewHolder
                 intent.putExtra(Common.PLAYER_JERSEYNO, personDetails.get(position).getJerseyNumber());
 
                 context.startActivity(intent);
-             }
+            }
         });
     }
 

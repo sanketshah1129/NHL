@@ -13,5 +13,6 @@ public class Common {
     public static String PLAYER_POSITION = "PLAYER_POSITION";
     public static String PLAYER_JERSEYNO = "PLAYER_JERSEYNO";
 
+    public static String SELECT_POSITION = "- Select Position -";
 
 }

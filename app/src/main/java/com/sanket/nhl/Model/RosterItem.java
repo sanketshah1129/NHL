@@ -43,6 +43,17 @@ public class RosterItem {
         }
     };
 
+    public static Comparator<RosterItem> playerPositionComparator = new Comparator<RosterItem>() {
+
+        public int compare(RosterItem r1, RosterItem r2) {
+            String Position1 = r1.getPosition().getName().toUpperCase();
+            String Position2 = r2.getPosition().getName().toUpperCase();
+
+            return Position1.compareTo(Position2);
+
+        }
+    };
+
     private Person person;
     private String jerseyNumber;
     private Position position;
