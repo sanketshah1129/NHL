@@ -72,7 +72,6 @@ public class HomeFragment extends Fragment {
 
         if (teamsItems.size() > 0) {
             homeViewModel.loadPositions(teamsItems, teamID).observe(this, new PositionObserver());
-            ;
 
             rvPlayers.setHasFixedSize(true);
             LinearLayoutManager layoutManager = new LinearLayoutManager(context);

@@ -51,11 +51,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
 
         viewModel = ViewModelProviders.of(this).get(MainViewModel.class);
-        ;
         fragment = new HomeFragment();
 
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.bringToFront();
 
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         mAppBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph())
@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 TeamsItem teamDetails = teamList.get(i);
 
                 String teamName = teamDetails.getTeamName();
+                int teamID = teamDetails.getId();
 
                 map.put(i, teamName);
                 MenuItem item = menu.add(R.id.nav_home, i, i, teamName + " (" + (teamDetails.getLocationName() + ")"));
